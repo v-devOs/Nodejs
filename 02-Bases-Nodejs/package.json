@@ -1,0 +1,11 @@
+{
+  "name": "02-bases-nodejs",
+  "version": "0.0.1",
+  "description": "Esta es mi primera aplicacion real de node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uriel Emiliano",
+  "license": "ISC"
+}
