@@ -3,11 +3,11 @@
 
 // console.log( emailTemplate )
 
-const { getUserById } = require('./js-foundation/03-callbacks.js')
+const { getUserById } = require('./js-foundation/04-arrow.js')
 
-const id = 3
+const id = 1
 
-getUserById(id, function( error, user ){
+getUserById( id, ( error, user ) => {
   if(error){
     throw new Error('User not found with id', id)
   }
