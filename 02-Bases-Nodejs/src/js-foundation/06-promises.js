@@ -1,10 +1,15 @@
-const getPokemonByid = ( id ) => {
+const getPokemonByid = async( id ) => {
   const url = `https://pokeapi.co/api/v2/pokemon/${ id }`
 
-  return fetch( url )
+  const response = await fetch(url)
+  const pokemon = await response.json()
+
+  return pokemon.name
+
+  /* return fetch( url )
     .then( resp => resp.json())
     .then( () => { throw new Error('Pokemon no existe')})
-    .then( pokemon => pokemon.name )
+    .then( pokemon => pokemon.name ) */
     
 }
 
