@@ -3,9 +3,9 @@
 
 // console.log( emailTemplate )
 
-const { getUserById } = require('./js-foundation/04-arrow.js')
+ require('./js-foundation/05-factory')
 
-const id = 1
+/* const id = 1
 
 getUserById( id, ( error, user ) => {
   if(error){
@@ -13,4 +13,4 @@ getUserById( id, ( error, user ) => {
   }
 
   console.log(user)
-})
+}) */
