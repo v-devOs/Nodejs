@@ -1,8 +1,9 @@
+const { httpClientPlugin: http } = require('../plugins')
+
 const getPokemonByid = async( id ) => {
   const url = `https://pokeapi.co/api/v2/pokemon/${ id }`
 
-  const response = await fetch(url)
-  const pokemon = await response.json()
+  const pokemon = await http.get( url )
 
   return pokemon.name
 
@@ -12,6 +13,5 @@ const getPokemonByid = async( id ) => {
     .then( pokemon => pokemon.name ) */
     
 }
-
 
 module.exports = getPokemonByid
