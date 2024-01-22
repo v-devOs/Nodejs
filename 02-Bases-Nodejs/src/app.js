@@ -1,16 +1,11 @@
-// const { emailTemplate } = require('./js-foundation/01-template.js')
-// require('./js-foundation/02-destructuring.js')
+const { getAge, getUUID } = require('./plugins')
 
-// console.log( emailTemplate )
+const { buildMakePerson } = require('./js-foundation/05-factory')
 
- require('./js-foundation/05-factory')
+const makePerson = buildMakePerson({ getUUID, getAge })
 
-/* const id = 1
+const obj = { name: 'Jonh', birthDate: '2003-06-30' }
 
-getUserById( id, ( error, user ) => {
-  if(error){
-    throw new Error('User not found with id', id)
-  }
+const john = makePerson(obj)
 
-  console.log(user)
-}) */
+console.log(john)
