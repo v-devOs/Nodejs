@@ -5,6 +5,8 @@ const logger = buildLogger('app.js')
 
 logger.log('Hola mundo')
 
+logger.error('Esto es algo malo')
+
 /* 
 
 const { buildMakePerson } = require('./js-foundation/05-factory') */
